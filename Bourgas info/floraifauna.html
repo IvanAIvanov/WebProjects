@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Флора и фауна</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Бургас" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style_slider.css" rel="stylesheet" />
+    <link href="nav_style.css" rel="stylesheet" />
+    <link href="bs_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Silder.js"></script>
+
+    <style>
+        body {
+            font: normal 13px/1.5 Arial, sans-serif;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0 0 .5em;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 780px;
+        }
+
+        /*
+        * Caption component
+        */
+        .caption {
+            position: relative;
+            overflow: hidden;
+
+            /* Only the -webkit- prefix is required these days */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .caption::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background .35s ease-out;
+        }
+
+        .caption:hover::before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .caption__media {
+            display: block;
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .caption__overlay__title {
+            -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay__title {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <div id="logo-container">
+            <h1>
+                <a href="#">
+                    <img src="img/logo2.jpg" alt="logo"/>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <nav>
+
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="burgas.html">За града</a></li>
+                <li><a href="zabelejitelnosti.html">Забележителности</a></li>
+                <li><a href="links.html">Полезни връзки</a></li>
+                <li><a href="contacts.html">За контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="name.html" style="width:69px;">Име</a></li>
+        <li class="topmenu"><a href="naselenie.html" style="width:69px;">Население</a></li>
+        <li class="topmenu"><a href="teritoria.html" style="width:69px;"><marquee behavior="alternate">Административно-териториално деление</marquee></a></li>
+        <li class="topmenu"><a href="klimat.html" style="width:69px;">Климат</a></li>
+        <li class="topmenu"><a href="vodi.html" style="width:69px;">Води</a></li>
+        <li class="topmenu"><a href="floraifauna.html" style="width:69px;"><marquee behavior="alternate">Флора и фауна</marquee></a></li>
+        <li class="topmenu"><a href="zname.html" style="width:69px;">Знаме</a></li>
+        <li class="topmenu"><a href="transport.html" style="width:69px;">Транспорт</a></li>
+        <li class="topmenu"><a href="zdrave.html" style="width:69px;"><marquee behavior="alternate">Здравеопазване</marquee></a></li>
+        <li class="topmenu"><a href="Obrazovanie.html" style="width:69px;"><marquee behavior="alternate">Образование и наука</marquee></a></li>
+        <li class="topmenu"><a href="sabitia.html" style="width:69px;">Събития</a></li>
+        <li class="toplast"><a href="lichnosti.html" style="width:69px;">Личности</a></li>
+
+    </ul>
+    <!--content-->
+    <section id="content">
+        <h3>Флора и фауна</h3>
+        <div class="container">
+
+            <article class="caption">
+
+                <img src="img/rezervatat.jpg" alt="" width="700" height="400" />
+                <div class="caption__overlay">
+                    <h1 class="caption__overlay__title"></h1>
+                    <b class="caption__overlay__content">
+                        Множеството защитени територии и природно уязвими зони, разположени в околностите на града, като защитената местност Пода,
+                        Мандренското, Бургаското и Атанасовското езеро, са обособени в така наречения проект Бургаски влажни зони. Бургаското и Атанасовското езеро
+                        и местността Пода са включени в Рамсарския списък за защита на влажни зони с международно значение и по-специално като местообитание на
+                        водолюбиви птици. В езерата край Бургас зимуват защитени видове птици като къдроглав пеликан, чапли и корморани, голяма белочела гъска,
+                        червеногуша гъска, бял ангъч, саблеклюн и др.
+                        Бургаският езерен комплекс е разположен на прелетния път Виа Понтика и е място с тесен фронт на миграция за прелетните реещи се птици
+                        от значителна част на Северна, Източна и Централна Европа. До 300 000 щъркела и до 60 000 грабливи птици прелитат ежегодно над езерата
+                        по време на есенната миграция. Това е мястото с най-голяма концентрация в Европа по време на прелет за розовия и къдроглавия пеликан,
+                        на тръстиковия блатар и на второ място (след Босфора) по концентрация на малкия креслив орел. По време на прелет е установяван и изключително
+                        световно застрашеният тънкоклюн свирец. Бургаския залив и Бургаските езера са документирани около 140 различни вида риби, част от които могат да бъдат разгледани в
+                        природонаучния музей в града. В южния край на Бургас, в защитената местност Пода е изграден център за наблюдение на птиците.
+                        Там има документирани над 255 вида птици, което представлява 67% от птичия свят на България. В природния резерват на Атанасовското езеро
+                        са документирани 317 вида птици. От тях 83 са вписани в Червената книга на България, а над 170 вида са от европейско значение.
+                        Там се среща и най-малкият бозайник в света, етруската земеровка, а от 2010 година се наблюдават популации на розово фламинго.
+
+                    </b>
+
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+</header>
+<footer>
+    <p>&copy;Created by Ivan Ivanov @zerocool@ #BFU 2016</p>
+</footer>
+</body>
+</html>

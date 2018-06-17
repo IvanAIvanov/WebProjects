@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Население</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Бургас" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style_slider.css" rel="stylesheet" />
+    <link href="nav_style.css" rel="stylesheet" />
+    <link href="bs_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Silder.js"></script>
+
+    <style>
+        body {
+            font: normal 13px/1.5 Arial, sans-serif;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0 0 .5em;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 780px;
+        }
+
+        /*
+        * Caption component
+        */
+        .caption {
+            position: relative;
+            overflow: hidden;
+
+            /* Only the -webkit- prefix is required these days */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .caption::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background .35s ease-out;
+        }
+
+        .caption:hover::before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .caption__media {
+            display: block;
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .caption__overlay__title {
+            -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay__title {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <div id="logo-container">
+            <h1>
+                <a href="#">
+                    <img src="img/logo2.jpg" alt="logo"/>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <nav>
+
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="burgas.html">За града</a></li>
+                <li><a href="zabelejitelnosti.html">Забележителности</a></li>
+                <li><a href="links.html">Полезни връзки</a></li>
+                <li><a href="contacts.html">За контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="name.html" style="width:69px;">Име</a></li>
+        <li class="topmenu"><a href="naselenie.html" style="width:69px;">Население</a></li>
+        <li class="topmenu"><a href="teritoria.html" style="width:69px;"><marquee behavior="alternate">Административно-териториално деление</marquee></a></li>
+        <li class="topmenu"><a href="klimat.html" style="width:69px;">Климат</a></li>
+        <li class="topmenu"><a href="vodi.html" style="width:69px;">Води</a></li>
+        <li class="topmenu"><a href="floraifauna.html" style="width:69px;"><marquee behavior="alternate">Флора и фауна</marquee></a></li>
+        <li class="topmenu"><a href="zname.html" style="width:69px;">Знаме</a></li>
+        <li class="topmenu"><a href="transport.html" style="width:69px;">Транспорт</a></li>
+        <li class="topmenu"><a href="zdrave.html" style="width:69px;"><marquee behavior="alternate">Здравеопазване</marquee></a></li>
+        <li class="topmenu"><a href="Obrazovanie.html" style="width:69px;"><marquee behavior="alternate">Образование и наука</marquee></a></li>
+        <li class="topmenu"><a href="sabitia.html" style="width:69px;">Събития</a></li>
+        <li class="toplast"><a href="lichnosti.html" style="width:69px;">Личности</a></li>
+    </ul>
+    <!--content-->
+    <section id="content">
+        <h3>Население</h3>
+        <div class="container">
+
+            <article class="caption">
+
+                <img src="img/naselenie.jpg" alt="" width="700" height="400" />
+                <div class="caption__overlay">
+                    <h1 class="caption__overlay__title"></h1>
+                    <b class="caption__overlay__content">
+                        Със своите над 200 000 жители (данни по настоящ адрес) Бургас се нарежда на четвърто място по численост
+                        на населението в страната след София, Пловдив и Варна. Но според данните на НСИ към 1 януари 2009 година
+                        Бургас има 188 861 жители. Подобна разлика има и за цяла България, която по настоящ адрес има 8 042 905 жители,
+                        но реално живеещите в страната са 7 606 551 жители по данни на НСИ към 1 януари 2009 година. За една от
+                        причините може да се счита миграцията на част от населението на Бургас в чужбина или други български населени
+                        места, които обаче не са променили бургаската си регистрация. Въпреки това за периода между двете преброявания
+                        през 2001 и 2011 година Бургас е един от четирите областни градове, които имат положителен прираст на населението.
+                        На 12 ноември 1987 година са присъединени 4 села — Горно Езерово, Лозово, Крайморие и Сарафово.
+                        През 1991 година е присъединено село Долно Езерово с население 5685 души.С решение на Министерски съвет
+                        през 2009 година се одобрява решението на общинския съвет в Бургас за присъединяване на общинските
+                        села Банево и Ветрен като квартали на града. Някои от новоприсъединените квартали на Бургас като Сарафово,
+                        Крайморие, Меден рудник са били в миналото бежански лагери, като са приютявали тракийски и македонски българи
+                        след Балканските войни (1912/13).</b>
+
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+</header>
+<footer>
+    <p>&copy;Created by Ivan Ivanov @zerocool@ #BFU 2016</p>
+</footer>
+</body>
+</html>

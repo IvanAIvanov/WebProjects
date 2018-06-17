@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+
+<title>Бургас</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="Бургас" />
+<link href="style.css" rel="stylesheet" />
+<link href="style_slider.css" rel="stylesheet" />
+<link href="nav_style.css" rel="stylesheet" />
+<link href="bs_style.css" rel="sidebar" />
+<script type="text/javascript" src="Silder.js"></script>
+
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .clock{
+        position: absolute;
+        top:20px;
+        left:20px;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 100%;
+        background-image: url("http://junesiphone.com/images/clock.png");
+        background-size: 100px;
+    }
+    .transform{
+        width: 2px;
+        position: absolute;
+        left:49px;
+        -webkit-transform-origin:bottom;
+    }
+    #s{
+        top:9px;
+        background-color: red;
+        height: 40px;
+    }
+    #m{
+        top:19px;
+        background-color: black;
+        height: 30px;
+    }
+    #h{
+        top:24px;
+        background-color: black;
+        height: 25px;
+    }
+    #center{
+        position: absolute;
+        left:45px;
+        top:45px;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 100%;
+    }
+
+</style>
+
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <div id="logo-container">
+            <h1>
+                <a href="#">
+                    <img src="img/logo3.jpg" alt="logo"/>
+                </a>
+            </h1>
+        </div>
+    </div>
+
+
+    <script language="javascript" type="text/javascript">
+        function tick(){
+            with(new Date()){
+                var h, m, s;
+                h = 30 * (getHours() % 12 + getMinutes() / 60);
+                m = 6 * getMinutes();
+                s = 6 * getSeconds();
+                document.getElementById('s').style.cssText="-webkit-transform:rotate("+s+"deg);";
+                document.getElementById('m').style.cssText="-webkit-transform:rotate("+m+"deg);";
+                document.getElementById('h').style.cssText="-webkit-transform:rotate("+h+"deg);";
+                setTimeout(tick, 1000);
+            }
+        }
+    </script>
+
+
+    <nav>
+
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="burgas.html">За града</a></li>
+                <li><a href="zabelejitelnosti.html">Забележителности</a></li>
+                <li><a href="links.html">Полезни връзки</a></li>
+                <li><a href="contacts.html">За контакти</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--Slider part-->
+    <section id="slideshow">
+
+        <a class="commands prev commands1" href="#sl_i4" title="Go to last slide">&lt;</a>
+        <a class="commands next commands1" href="#sl_i2" title="Go to 2nd slide">&gt;</a>
+        <a class="commands prev commands2" href="#sl_i1" title="Go to 1rst slide">&lt;</a>
+        <a class="commands next commands2" href="#sl_i3" title="Go to 3rd slide">&gt;</a>
+        <a class="commands prev commands3" href="#sl_i2" title="Go to 2nd slide">&lt;</a>
+        <a class="commands next commands3" href="#sl_i4" title="Go to 4th slide">&gt;</a>
+        <a class="commands prev commands4" href="#sl_i3" title="Go to 3rd slide">&lt;</a>
+        <a class="commands next commands4" href="#sl_i1" title="Go to first slide">&gt;</a>
+
+        <a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+        <a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+
+        <div class="container">
+            <div class="c_slider"></div>
+            <div class="slider">
+                <figure>
+                    <img src="img/burgas1.jpg" alt="" width="640" height="310" />
+                    <figcaption>Най-добрия град</figcaption>
+                </figure><!--
+				--><figure>
+                <img src="img/mosta.jpg" alt="" width="640" height="310" />
+                <figcaption>Моста-време за разходка</figcaption>
+            </figure><!--
+				--><figure>
+                <img src="img/ostrova.JPG" alt="" width="640" height="310" />
+                <figcaption>Остров "Св.Анастасия"-райско кътче край Бургас</figcaption>
+            </figure><!--
+				--><figure>
+                <img src="img/nightbs.JPG" alt="" width="640" height="310" />
+                <figcaption>@Една нощ в Бургас</figcaption>
+            </figure>
+            </div>
+        </div>
+
+        <span id="timeline"></span>
+
+        <ul class="dots_commands"><!--
+			--><li><a title="Show slide 1" href="#sl_i1">Slide 1</a></li><!--
+			--><li><a title="Show slide 2" href="#sl_i2">Slide 2</a></li><!--
+			--><li><a title="Show slide 3" href="#sl_i3">Slide 3</a></li><!--
+			--><li><a title="Show slide 4" href="#sl_i4">Slide 4</a></li>
+        </ul>
+
+    </section>
+</header>
+
+<body onload="tick()">
+<div class="clock">
+    <div id="s" class="transform"></div>
+    <div id="m" class="transform"></div>
+    <div id="h" class="transform"></div>
+    <div id="center"></div>
+</div>
+</body>
+<footer>
+    <p>&copy;Created by Ivan Ivanov @zerocool@ #BFU 2016</p>
+</footer>
+</body>
+</html>

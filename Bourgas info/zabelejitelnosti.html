@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Забележителности</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Бургас" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style_slider.css" rel="stylesheet" />
+    <link href="nav_style.css" rel="stylesheet" />
+    <link href="bs_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Silder.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        .text-container {
+            width: 690px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+    </style>
+    <style>
+        body {
+            font: normal 13px/1.5 Arial, sans-serif;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0 0 .5em;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 780px;
+        }
+
+
+        .caption {
+            position: relative;
+            overflow: hidden;
+
+            /* Only the -webkit- prefix is required these days */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .caption::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background .35s ease-out;
+        }
+
+        .caption:hover::before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .caption__media {
+            display: block;
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .caption__overlay__title {
+            -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay__title {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <div id="logo-container">
+            <h1>
+                <a href="#">
+                    <img src="img/logo3.jpg" alt="logo"/>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <nav>
+
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="burgas.html">За града</a></li>
+                <li><a href="zabelejitelnosti.html">Забележителности</a></li>
+                <li><a href="links.html">Полезни връзки</a></li>
+                <li><a href="contacts.html">За контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="Ostrov.html" style="width:69px;"><marquee behavior="alternate">Остров "Света Анастасия"</marquee></a></li>
+        <li class="topmenu"><a href="banite.html" style="width:69px;"><marquee behavior="alternate">"Акве Калиде"</marquee></a></li>
+        <li class="topmenu"><a href="antichni.html" style="width:69px;"><marquee behavior="alternate">Антични и средновековни</marquee></a></li>
+        <li class="topmenu"><a href="morskata.html" style="width:69px;"><marquee behavior="alternate">Морска градина и други паркове</marquee></a></li>
+        <li class="topmenu"><a href="kazino.html" style="width:69px;"><marquee behavior="alternate">Морското казино, Бургаския мост и градски плаж</marquee></a></li>
+        <li class="topmenu"><a href="drugi.html" style="width:69px;">Други</a></li>
+
+    </ul>
+    <!--content-->
+    <section id="content">
+        <h3>Забележителности</h3>
+        <div class="container">
+
+            <article class="caption">
+
+                <img src="img/bsplaces.jpg" alt="" width="700" height="400" />
+                <div class="caption__overlay">
+                    <h1 class="caption__overlay__title"></h1>
+                    <b class="caption__overlay__content" style="text-align:justify">
+                        <body>
+                        <div class="text-container ">
+                            От края на 19 век Бургас е един най-бързо развиващите в икономически и духовен план български градове. 264 сгради в различни
+                            европейски архитектурни стилове и български традиции са обявени за паметници на културата. По-голяма част от паметниците на
+                            културата са разположени в близост до пешеходната зона на града. Най-старите сгради в Бургас са баните, построени от Сюлейман I (1520-1566),
+                            и манастирът „Света Анастасия“, който се намира на едноименния остров на 6 км навътре в морето. Като паметник на културата от национално значение,
+                            той е единственият островен и най-добре запазеният морски манастир по Българското Черноморие.
+                            <br>
+                            Бургас днес е модерен град. Наред със съвременната архитектура могат да се намерят и запазени сгради от началото на XIX век насам.
+                            Бургас е дом на известни личности, свързани с културата и изкуството. Изпети са песни за морето, за града и прочутите му вечери,
+                            които несъмнено през лятото са прохладни и изключително приятни за разходки из града. Улиците са озеленени, а парковете са поддържани и красиви.
+                            Едни от популярните забележителности на града са Морската градина с казиното и „Бургаският мост“ (кей за разходки), построен през 80-те години на миналия век.
+                            За разлика от другите големи български градове, където през последните години ударното строителство на нови сгради е унищожило доста зелени площи,
+                            озеленените площи в Бургас за същия период от време са останали почти непокътнати.
+                            <br>
+                            В близост до Бургас се намират Несебър, единственият български град - част от Световно културно наследство (ЮНЕСКО);
+                            античният и средновековен град Аполония (днес Созопол) и древното тракийско светилище Бегликташ (близо до Приморско).
+                        </div>  </b>
+
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+</header>
+</body>
+
+<footer>
+    <p>&copy;Created by Ivan Ivanov @zerocool@ #BFU 2016</p>
+</footer>
+</body>
+</html>

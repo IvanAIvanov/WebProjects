@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Име</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Бургас" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style_slider.css" rel="stylesheet" />
+    <link href="nav_style.css" rel="stylesheet" />
+    <link href="bs_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Silder.js"></script>
+
+    <style>
+        body {
+            font: normal 14px/1.5 Arial, sans-serif;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0 0 .5em;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 780px;
+        }
+
+        /*
+        * Caption component
+        */
+        .caption {
+            position: relative;
+            overflow: hidden;
+
+            /* Only the -webkit- prefix is required these days */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .caption::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background .35s ease-out;
+        }
+
+        .caption:hover::before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .caption__media {
+            display: block;
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .caption__overlay__title {
+            -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay__title {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <div id="logo-container">
+            <h1>
+                <a href="#">
+                    <img src="img/logo2.jpg" alt="logo"/>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <nav>
+
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="burgas.html">За града</a> </li>
+                <li><a href="zabelejitelnosti.html">Забележителности</a></li>
+                <li><a href="links.html">Полезни връзки</a></li>
+                <li><a href="contacts.html">За контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="name.html" style="width:69px;">Име</a></li>
+        <li class="topmenu"><a href="naselenie.html" style="width:69px;">Население</a></li>
+        <li class="topmenu"><a href="teritoria.html" style="width:69px;"><marquee behavior="alternate">Административно-териториално деление</marquee></a></li>
+        <li class="topmenu"><a href="klimat.html" style="width:69px;">Климат</a></li>
+        <li class="topmenu"><a href="vodi.html" style="width:69px;">Води</a></li>
+        <li class="topmenu"><a href="floraifauna.html" style="width:69px;"><marquee behavior="alternate">Флора и фауна</marquee></a></li>
+        <li class="topmenu"><a href="zname.html" style="width:69px;">Знаме</a></li>
+        <li class="topmenu"><a href="transport.html" style="width:69px;">Транспорт</a></li>
+        <li class="topmenu"><a href="zdrave.html" style="width:69px;"><marquee behavior="alternate">Здравеопазване</marquee></a></li>
+        <li class="topmenu"><a href="Obrazovanie.html" style="width:69px;"><marquee behavior="alternate">Образование и наука</marquee></a></li>
+        <li class="topmenu"><a href="sabitia.html" style="width:69px;">Събития</a></li>
+        <li class="toplast"><a href="lichnosti.html" style="width:69px;">Личности</a></li>
+    </ul>
+    <!--content-->
+    <section id="content">
+        <h3>Име</h3>
+        <div class="container">
+
+            <article class="caption">
+                <img src="img/oldbs.jpg" alt="" width="700" height="400" />
+                <div class="caption__overlay">
+                    <h1 class="caption__overlay__title">Бургас</h1>
+                    <b class="caption__overlay__content">
+                        Днешното име на града произлиза от латинската дума Burgus/Бургос — кула.
+                        Според местни предания името идва от римски пътен стълб, така наречен бург, който бил положен
+                        в района на днешното Бургаско пристанище. Византийският поет Мануел Фил споменава Бургас като
+                        Пиргос в своите творби. В индоевропейските езици гръцкото пиргос и латинското бургос са идентични,
+                        като имат и за основа общ индоевропейски корен. Според проф. Кирил Влахов „пюргос“ е дума от тракийски произход,
+                        който също е индоевропейски. Според него „пюргос“ означава на тракийски „укрепление от дебели дървени греди“.
+                        Сходен произход има името на испанския град Бургос.
+                        Чак до края на 19 век градът е наричан както Бургас, така и Пиргос, а в стари руски карти е срещан и като Порос и Форос.
+                        През 19 век е наричан и Ахело Бургас, за да се разграничи от Люле Бургас и други населени места със сходни имена.
+                        Друга версия казва, че името на града е наследство от името на Кан Буртаз - 683-633 г, П.Н.Е.
+                        Град с такова име има във Волжка България през 13 век.</b>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+</header>
+<footer>
+    <p>&copy;Created by Ivan Ivanov @zerocool@ #BFU 2016</p>
+</footer>
+</body>
+</html>

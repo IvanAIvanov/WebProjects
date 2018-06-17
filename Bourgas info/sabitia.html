@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title>Събития</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Бургас" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="style_slider.css" rel="stylesheet" />
+    <link href="nav_style.css" rel="stylesheet" />
+    <link href="bs_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Silder.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        .text-container {
+            width: 690px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+    </style>
+    <style>
+        body {
+            font: normal 12px/1.5 Arial, sans-serif;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0 0 .5em;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 780px;
+        }
+
+
+        .caption {
+            position: relative;
+            overflow: hidden;
+
+            /* Only the -webkit- prefix is required these days */
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .caption::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background .35s ease-out;
+        }
+
+        .caption:hover::before {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .caption__media {
+            display: block;
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .caption__overlay__title {
+            -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+            transition: -webkit-transform .35s ease-out;
+            transition:         transform .35s ease-out;
+        }
+
+        .caption:hover .caption__overlay__title {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <div id="logo-container">
+            <h1>
+                <a href="#">
+                    <img src="img/logo2.jpg" alt="logo"/>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <nav>
+
+
+        <div id="menu">
+            <ul>
+                <li class="active"><a href="index.html">Начало</a></li>
+                <li><a href="burgas.html">За града</a></li>
+                <li><a href="zabelejitelnosti.html">Забележителности</a></li>
+                <li><a href="links.html">Полезни връзки</a></li>
+                <li><a href="contacts.html">За контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="name.html" style="width:69px;">Име</a></li>
+        <li class="topmenu"><a href="naselenie.html" style="width:69px;">Население</a></li>
+        <li class="topmenu"><a href="teritoria.html" style="width:69px;"><marquee behavior="alternate">Административно-териториално деление</marquee></a></li>
+        <li class="topmenu"><a href="klimat.html" style="width:69px;">Климат</a></li>
+        <li class="topmenu"><a href="vodi.html" style="width:69px;">Води</a></li>
+        <li class="topmenu"><a href="floraifauna.html" style="width:69px;"><marquee behavior="alternate">Флора и фауна</marquee></a></li>
+        <li class="topmenu"><a href="zname.html" style="width:69px;">Знаме</a></li>
+        <li class="topmenu"><a href="transport.html" style="width:69px;">Транспорт</a></li>
+        <li class="topmenu"><a href="zdrave.html" style="width:69px;"><marquee behavior="alternate">Здравеопазване</marquee></a></li>
+        <li class="topmenu"><a href="Obrazovanie.html" style="width:69px;"><marquee behavior="alternate">Образование и наука</marquee></a></li>
+        <li class="topmenu"><a href="sabitia.html" style="width:69px;">Събития</a></li>
+        <li class="toplast"><a href="lichnosti.html" style="width:69px;">Личности</a></li>
+    </ul>
+    <!--content-->
+    <section id="content">
+        <h3>Събития</h3>
+        <div class="container">
+
+            <article class="caption">
+
+                <img src="img/sabitia.jpg" alt="" width="700" height="400" />
+                <div class="caption__overlay">
+                    <h1 class="caption__overlay__title"></h1>
+                    <b class="caption__overlay__content" style="text-align:justify">
+                        <body>
+                        <div class="text-container ">
+
+                            Наред с празника на Бургас, който се празнува ежегодно на 6 декември в деня на религиозния празник на св. Николай Чудотворец,
+                            в Бургас се провеждат предимно през лятото фестивали и културни събития от различно естество. Някои от фестивалите като София филм
+                            фест на брега, Бургас и морето, Бургас Блус & Jazz Festival и Spirit of Burgas, литературни дни Петя Дубарова, мотосъбора в Крайморие
+                            и традиционните празници в чест на покровителя на града се провеждат всяка година. В края на март 2012 година за първи път се проведе
+                            фестивалът за съвременно изкуство Включи града.
+                            <br>
+                            В края на април се провежда Фестивалът на немската и австрийска класическа музика. През май се провеждат панаирът за флористика Флора,
+                            националният литературен конкурс Петя Дубарова, международният театрален фестивал Ерата на водолея, а през третата седмица на
+                            месеца – Международната ветроходна регата Port Burgas Sailing Week. На 24 май се провеждат като в цялата страна шествия в чест на
+                            Българската азбука и първоапостолите Св. св. Кирил и Методий.
+                            <br>
+                            Месец юни започва с откриването на Фестивала на пясъчните фигури в парк Езерото, който трае до края на септември. Също така през юни
+                            се провеждат Летни културни празници „Бургас – лято, море“, международният турнир по спортни танци Burgas Cup и фестивалът за
+                            класическа и оперна музика Емил Чакъров. На вечерта на 30 юни хората се събират на брега на Черно море, за да се насладят на изгрева на
+                            сутринта на 1 юли. Тази реликва от времето на хипитата от 70-те години се посреща традиционно в града на централния плаж и се нарича
+                            също July Morning.
+                            <br>
+                            През юли се провеждат поетичните дни „Пейо Яворов“, а през последния уикенд на месеца – плувния маратон Бургас.
+                            <br>
+                            В началото на август са музикалните фестивали Бургас Блус & Jazz Festival и Националният конкурс за забавна песен Бургас и морето.
+                            На втория уикенд на месеца на бургаския плаж и в южната част на Морската градина се изграждат сцените на фестивала за съвременна
+                            музика „Духът на Бургас“ (виж Spirit of Burgas). От 19 до 20 август се отбелязва годишнината от Илинденско-Преображенското въстание,
+                            като основните чествания са в местността Петрова нива, южно от Бургас. В края на месеца Бургас е домакин на Националната седмица на морето
+                            и на Международния фолклорен фестивал.
+                            <br>
+                            През септември се провежда международният театрален фестивал „На брега“.
+                            <br>
+                            През последния уикенд на ноември се провежда Фестивалът за метъл музика Haunted Shores.
+                            <br>
+                            На 6 декември, деня на св. Николай Чудотворец, покровител на града, на морето и моряците, се провеждат различни събития и се награждава
+                            Почетен гражданин на Бургас.Една седмица преди Коледа се обявяват носителите на наградата за литература Хеликон.
+
+                        </div>  </b>
+
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+</header>
+</body>
+
+<footer>
+    <p>&copy;Created by Ivan Ivanov @zerocool@ #BFU 2016</p>
+</footer>
+</body>
+</html>
